@@ -1,0 +1,367 @@
+body {
+  background-color: white;
+}
+h1 {
+  font-family: "calibri";
+  text-align: center;
+  color: black;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+header {
+  background: #5ce1e6;
+  text-align: center;
+}
+@media (min-width: 750px) {
+  header {
+    text-align: center;
+  }
+}
+.encabezado {
+  margin: 30px 0;
+  color: black;
+}
+.barra {
+  padding: 20px 0;
+  background: #f3632b;
+}
+.barra p {
+  margin: 0;
+  color: white;
+  font-family: "calibri";
+}
+.icono {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 60px;
+  background-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 750px) {
+  .icono {
+    margin-bottom: 0;
+  }
+}
+
+.icono1 {
+  background-image: url(../img/pastelicono.png);
+}
+.icono2 {
+  background-image: url(../img/chef.png);
+}
+.icono3 {
+  background-image: url(../img/regalo.png);
+}
+
+#lista-platillo .row {
+  margin-bottom: 20px;
+}
+.agregar-carrito {
+  margin: 10px 0;
+}
+.card {
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255, 0.05);
+  background: white;
+  font-family: "calibri";
+  justify-content: center;
+  margin: 0px 20px 80px 80px;
+  display: flex;
+}
+@media (min-width: 550px) {
+  .card {
+    text-align: left;
+  }
+}
+.info-card {
+  padding: 10px 20px;
+  color: black;
+  font-family: "calibri";
+}
+.info-card p,
+.card h4 {
+  margin-bottom: 5px;
+}
+.info-card .precio {
+  text-decoration: line-through;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.info-card .precio span {
+  font-weight: 18px;
+  font-size: 22px;
+}
+
+.barra-decoraciones {
+  padding: 20px 0;
+  background: #f3632b;
+}
+.barra-decoraciones h2 {
+  text-align: center;
+}
+.barra-decoraciones p {
+  font-family: "calibri";
+  margin: 0;
+  color: white;
+}
+
+.barra-pedidos {
+  padding: 20px 0;
+  background: #f3632b;
+}
+.barra-pedidos h2 {
+  text-align: center;
+}
+.barra-pedidos p {
+  font-family: "calibri";
+  margin: 0;
+  color: white;
+}
+
+.formulario {
+  background-image: url(../img/fondo-form.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 650px;
+}
+
+.form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: "calibri";
+  font-size: 18px;
+  color: black;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+}
+
+.table caption {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 8px 0px;
+}
+
+.table tr {
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.table th,
+.table td {
+  font-size: 16px;
+  padding: 8px;
+  text-align: center;
+}
+
+.table thead th {
+  text-transform: uppercase;
+  background-color: #ddd;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.table tbody td:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  .table {
+    border: 0px;
+  }
+  .table caption {
+    font-size: 22px;
+  }
+  .table thead {
+    display: none;
+  }
+  .table tr {
+    margin-bottom: 8px;
+    border-bottom: 4px solid #ddd;
+    display: block;
+  }
+  .table th,
+  .table td {
+    font-size: 12px;
+  }
+  .table td {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+  }
+  .table td:last-child {
+    border-bottom: 0px;
+  }
+  .table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+  }
+}
+
+.container-pedidos {
+  width: 50%;
+  max-width: 1000px;
+  margin-left: 250px;
+}
+
+.container-pedidos h1 {
+  width: 50%;
+  max-width: 1000px;
+  margin-left: 470px;
+}
+
+.table-pedidos {
+  width: 150%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0 0 1 0;
+  padding: 0;
+  table-layout: fixed;
+}
+
+.table-pedidos caption {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 8px 0px;
+}
+
+.table-pedidos tr {
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.table-pedidos th,
+.table-pedidos td {
+  font-size: 16px;
+  padding: 8px;
+  text-align: center;
+}
+
+.table-pedidos thead th {
+  text-transform: uppercase;
+  background-color: #ddd;
+}
+
+.table-pedidos tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.table-pedidos tbody td:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  .table-pedidos {
+    border: 0px;
+  }
+  .table-pedidos caption {
+    font-size: 22px;
+  }
+  .table-pedidos thead {
+    display: none;
+  }
+  .table-pedidos tr {
+    margin-bottom: 8px;
+    border-bottom: 4px solid #ddd;
+    display: block;
+  }
+  .table-pedidos th,
+  .table-pedidos td {
+    font-size: 12px;
+  }
+  .table-pedidos td {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+  }
+  .table-pedidos td:last-child {
+    border-bottom: 0px;
+  }
+  .table-pedidos td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.footer {
+  padding-top: 40px;
+  background-color: rgb(71, 71, 71);
+}
+.footer .menu a {
+  font-family: "calibri";
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
